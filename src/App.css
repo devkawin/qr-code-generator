@@ -1,0 +1,110 @@
+.App{
+  padding: 0 5%;
+}
+.qrcode{
+  width: 150px;
+  margin: auto;
+}
+
+.header, .footer, .qrcode{
+  text-align: center;
+}
+
+.footer{
+  margin: 3%;
+}
+
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #0f587f;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 8px #7e7a7a;
+  padding: 50px;
+  background-color: #064b70;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 280px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li select {
+  padding: 10px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 10px 12px;
+  border: none;
+  background: #269926;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.color, .bgcolor{
+  padding: 0 !important;
+  height: 40px;
+}
